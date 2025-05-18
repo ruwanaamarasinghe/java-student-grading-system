@@ -29,4 +29,15 @@ public class StudentManager {
 
         System.out.print("Student added successfully!\n");
     }
+
+    public void showAllStudents() {
+        if (studentsList.isEmpty()) {
+            System.out.println("No students found!");
+            return;
+        }
+        for (Student student : studentsList) {
+            student.displayInfo();
+            System.out.println("...............");
+        }
+    }
 }

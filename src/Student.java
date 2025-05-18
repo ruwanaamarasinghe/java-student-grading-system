@@ -33,4 +33,12 @@ public class Student {
         double average = calculateAverage();
         return GradeCalculator.getGrade(average);
     }
+
+    //print values
+    public void displayInfo() {
+        System.out.println("Student ID: " + studentId + "Name: " + name);
+        System.out.println("Marks: " + marks);
+        System.out.println("Average: %.2f\n" + calculateAverage());
+        System.out.println("Grade: " + calculateGrade());
+    }
 }
