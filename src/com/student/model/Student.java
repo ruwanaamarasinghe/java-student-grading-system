@@ -1,3 +1,7 @@
+package com.student.model;
+
+import com.student.util.GradeCalculator;
+
 import java.util.List;
 
 public class Student {
@@ -17,6 +21,7 @@ public class Student {
     public String getName() {
         return name;
     }
+
     public List<Integer> getMarks() {
         return marks;
     }
@@ -38,7 +43,7 @@ public class Student {
     public void displayInfo() {
         System.out.println("Student ID: " + studentId + "Name: " + name);
         System.out.println("Marks: " + marks);
-        System.out.println("Average: %.2f\n" + calculateAverage());
+        System.out.println("Average: %.2f: " + calculateAverage());
         System.out.println("Grade: " + calculateGrade());
     }
 }

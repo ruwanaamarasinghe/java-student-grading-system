@@ -1,3 +1,5 @@
+package com.student.util;
+
 public class GradeCalculator {
     public static String getGrade(double average) {
         if (average >= 90) return "A+";
